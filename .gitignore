@@ -10,3 +10,4 @@ env/
 *.yaml
 classification_dataset/
 
+/classification_dataset

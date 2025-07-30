@@ -1,0 +1,6 @@
+outs:
+- md5: 1658c20fe5e72d67e6537c92e6d10fcc.dir
+  size: 224158391
+  nfiles: 5180
+  hash: md5
+  path: classification_dataset
