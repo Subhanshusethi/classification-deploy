@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pth
+*.ipynb
+env/
+.ckpt/
+.ckpts/
+.DS_Store
+*.log
+*.yaml
+classification_dataset/
+

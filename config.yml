@@ -1,0 +1,41 @@
+model:
+  clip_dim: 640
+  dropout_rate:
+  - 0.1
+  hidden_dim:
+  - 256
+  name: convnext_base_w
+  num_hidden_layers:
+  - 1
+  pretrained: laion2b_s13b_b82k
+optimizer:
+  beta1:
+  - 0.9
+  beta2:
+  - 0.999
+  clip_lr:
+  - 1.0e-05
+  predictor_lr:
+  - 5.0e-05
+  weight_decay:
+  - 0.001
+paths:
+  cache_dir: /kaggle/working/
+  checkpoint_dir: ckpts
+  data_dir: classification
+  log_dir: logs
+scheduler:
+  gamma: 0.1
+  milestones:
+  - 4
+  - 6
+  - 10
+training:
+  accumulation_steps: 2
+  batch_size: 4
+  num_epochs: 10
+wandb:
+  api_key: your_wandb_api_key
+  project: project_name
+  run_name_template: '{hidden_dim}x{num_hidden_layers}_training'
+  using: false
