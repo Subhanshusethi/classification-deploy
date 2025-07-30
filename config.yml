@@ -22,7 +22,7 @@ optimizer:
 paths:
   cache_dir: /kaggle/working/
   checkpoint_dir: ckpts
-  data_dir: classification
+  data_dir: classification_dataset
   log_dir: logs
 scheduler:
   gamma: 0.1
