@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python training_code/train.py
+    deps:
+    - path: classification_dataset
+      hash: md5
+      md5: 1658c20fe5e72d67e6537c92e6d10fcc.dir
+      size: 224158391
+      nfiles: 5180
+    - path: config.yml
+      hash: md5
+      md5: e98dd44c5cc71f11d95f14cb7dcb4afe
+      size: 652
+    - path: training_code/train.py
+      hash: md5
+      md5: 783892957227e692453fcafbd0acd1de
+      size: 16713
+    outs:
+    - path: ckpts/binary_checkpoint_epoch1.pth
+      hash: md5
+      md5: 39609186c7583f9a3aa6a224fe757efb
+      size: 1425819758
+    - path: metrics.json
+      hash: md5
+      md5: c5f1d75f5479701b702a8fefc7ca01a4
+      size: 139

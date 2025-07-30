@@ -1,0 +1,12 @@
+stages:
+  train_model:
+    cmd: python training_code/train.py
+    deps:
+    - classification_dataset
+    - config.yml
+    - training_code/train.py
+    outs:
+    - ckpts/binary_checkpoint_epoch1.pth
+    metrics:
+    - metrics.json:
+        cache: false
