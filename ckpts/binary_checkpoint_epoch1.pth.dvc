@@ -1,5 +1,0 @@
-outs:
-- md5: 257ecebaea3463dfae74cdaf7cfb3bea
-  size: 1425819758
-  hash: md5
-  path: binary_checkpoint_epoch1.pth

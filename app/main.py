@@ -8,9 +8,9 @@ import torch.nn.functional as F
 import open_clip
 from PIL import Image
 import os
-from model import CategoryAwareAttributePredictor
-from utils import load_config, load_models, custom_round
-from infer import infer_image
+from app.model import CategoryAwareAttributePredictor
+from app.utils import load_config, load_models, custom_round
+from app.infer import infer_image
 
 app = FastAPI()
 

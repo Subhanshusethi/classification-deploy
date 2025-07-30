@@ -1,7 +1,7 @@
 ##################
 # CATEGORY_MAPPING
 ##################
-from model import CategoryAwareAttributePredictor
+from app.model import CategoryAwareAttributePredictor
 import yaml
 import torch
 import torch.nn.functional as F

@@ -1,6 +1,11 @@
 [core]
-    remote = localremote
+    remote = gdrive-remote
 ['remote "myremote"']
     url = gdrive://1rIZkkFgZs-8PmDiTYPum0XW5BsA0WBs_
+    gdrive_service_account_json_file_path = /mnt/ubuntu/uois/modern-binder-410014-f89bd63a0ceb.json
 ['remote "localremote"']
     url = ../../dvc_storage
+['remote "gdrive-remote"']
+    url = gdrive://1c4EOe4Cj1eaeqcsEgWGjo257EbMZF8uD
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = /mnt/ubuntu/uois/modern-binder-410014-f89bd63a0ceb.json
