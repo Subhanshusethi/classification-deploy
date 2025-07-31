@@ -20,5 +20,5 @@ RUN python -m pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # 7. Command to run your FastAPI app using uvicorn
-WORKDIR /mldeploy/app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+WORKDIR /mldeploy
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
