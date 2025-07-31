@@ -69,7 +69,7 @@ jobs:
           dvc remote modify gdrive-remote gdrive_service_account_json_file_path gdrive-service-account.json
 
       - name: Pull dataset and model with DVC
-        run: dvc pull
+        run: dvc pull -v
 
       - name: Set PYTHONPATH and run tests
         run: |
