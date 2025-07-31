@@ -1,13 +1,13 @@
 model:
-  clip_dim: 640
+  clip_dim: 512
   dropout_rate:
   - 0.1
   hidden_dim:
   - 256
-  name: convnext_base_w
+  name: MobileCLIP-S1
   num_hidden_layers:
   - 1
-  pretrained: laion2b_s13b_b82k
+  pretrained: datacompdr
 optimizer:
   beta1:
   - 0.9
