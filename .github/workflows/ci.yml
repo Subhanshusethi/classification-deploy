@@ -75,8 +75,14 @@ jobs:
         run: |
           export PYTHONPATH=.
           pytest tests/
-      - name: Build Docker image
-        run: |
-          docker build -t classdeploy:latest .
+      - name: Log in to Docker Hub
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
 
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ml-fastapi-app:latest .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ml-fastapi-app:latest
 
