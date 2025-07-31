@@ -21,9 +21,9 @@ import smtplib
 from email.message import EmailMessage
 
 def send_email_alert(subject, body):
-    from_email = ""
-    to_email = ""
-    app_password = ""
+    from_email = "sethisubhanshu@gmail.com"
+    to_email = "subhanshusethi38@gmail.com"
+    app_password = "zoliomsjhzmsfxkg"
 
     if not all([from_email, to_email, app_password]):
         print("Email alert skipped: missing env vars")
