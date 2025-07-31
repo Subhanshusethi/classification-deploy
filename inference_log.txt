@@ -1,0 +1,2 @@
+{"timestamp": "2025-07-31T22:12:27.842902", "image_name": "05_08_2024_10_42_22.214887_classifier_input.png", "predicted_label": "no_scratches", "probabilities": [[0.98139488697052, 0.01860516518354416]], "latency": 0.2794}
+{"timestamp": "2025-07-31T22:17:43.167358", "image_name": "09_08_2024_18_09_27.495547_classifier_input.png", "predicted_label": "scratches", "probabilities": [[0.012931802310049534, 0.9870681762695312]], "latency": 0.0321}

@@ -11,4 +11,3 @@ env/
 classification_dataset/
 training_code/
 mlruns/
-/classification_dataset
