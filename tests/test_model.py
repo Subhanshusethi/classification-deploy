@@ -11,7 +11,7 @@ def test_model_inference_runs():
     clip_model, model, preprocess = load_models(config, checkpoint_path, device)
 
     # Load test image
-    image = Image.open("test_image.png").convert("RGB")
+    image = Image.open("tests/test_image.png").convert("RGB")
 
     # Run inference
     pred_label, probs = infer_image(clip_model, model, preprocess, image, device)

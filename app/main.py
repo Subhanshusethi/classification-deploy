@@ -16,8 +16,8 @@ app = FastAPI()
 
 @app.on_event("startup")
 def startup_event():
-    config = load_config("../config.yml")
-    checkpoint_path = "../ckpts/binary_checkpoint_epoch1.pth"
+    config = load_config("config.yml")
+    checkpoint_path = "ckpts/binary_checkpoint_epoch1.pth"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     clip_model, model, preprocess_val = load_models(config, checkpoint_path, device)
