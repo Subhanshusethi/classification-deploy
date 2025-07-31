@@ -10,18 +10,18 @@ stages:
       nfiles: 5180
     - path: config.yml
       hash: md5
-      md5: e98dd44c5cc71f11d95f14cb7dcb4afe
-      size: 652
+      md5: 437cb0ed5e806a3a2736bc57fd2b2653
+      size: 643
     - path: training_code/train.py
       hash: md5
-      md5: 783892957227e692453fcafbd0acd1de
-      size: 16713
+      md5: 12e28d4911d00795f90ec109d6c1325d
+      size: 16704
     outs:
     - path: ckpts/binary_checkpoint_epoch1.pth
       hash: md5
-      md5: 39609186c7583f9a3aa6a224fe757efb
-      size: 1425819758
+      md5: ca1ecee64b330f15fdc9d375598f925c
+      size: 515589742
     - path: metrics.json
       hash: md5
-      md5: c5f1d75f5479701b702a8fefc7ca01a4
-      size: 139
+      md5: 518f153081515e40b431c3c1b9f28b54
+      size: 142
